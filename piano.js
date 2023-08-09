@@ -22,4 +22,5 @@ window.addEventListener("keyup", keyStop);
 
 
 let loader = document.getElementById("preloader");
-window.addEventListener("load", () => loader.style.display = "none")
+const hideLoadingPAge = () => loader.style.display = "none";
+window.addEventListener("load", setTimeout(hideLoadingPAge, 1500));
